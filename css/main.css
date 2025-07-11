@@ -227,21 +227,83 @@ section {
 .template img{
     border-radius: 50px;
 }
-
+/* from style  */
 .form-action {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  /* background-color: #fff; */
+  padding: 40px 60px;
+  border-radius: 12px;
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); */
+  flex-wrap: wrap;
 }
 
-.left-from h2 {}
+/* Left Side (Text Heading) */
+.left-form {
+  flex: 1;
+  min-width: 250px;
+}
 
-.right-from {}
+.left-form h2 {
+  font-size: 4em;
+  color: #292931;
+  margin-bottom: 10px;
+}
 
-input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    color: #000;
+/* Right Side (Form Area) */
+.right-form {
+  flex: 2;
+  min-width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  color: #111;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4D47FF;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #4D47FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3a36d1;
 }
