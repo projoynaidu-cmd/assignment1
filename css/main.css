@@ -95,7 +95,7 @@ main {
 }
 
 section {
-    margin: 20px 0;
+    margin: 40px 0;
 
 }
 
@@ -123,15 +123,17 @@ section {
     border-radius: 20px;
 }
 
-/*  */
+/* Productive style */
 .Productive {
-    background-color: #4d47ff7c;
+    background-color: #e1e6ebb2;
     padding: 25px 45px;
     border-radius: 15px;
 }
 
 .Productive h2 {
     text-align: center;
+    font-size: 1.8em;
+    color: #252432;
 }
 
 .Productive .flex {
@@ -140,15 +142,30 @@ section {
     align-items: center;
     justify-content: space-evenly;
 }
+.flex h4{
+    color: #3A36D1;
+    font-size: 3em;
+}
+.flex p{
+    font-size: 1em;
+    color: #252432;
+}
 
 /*  testmoniale STYLE*/
-.testmoniale {}
+
+.testmoniale {
+    margin-top: 100px;
+}
 
 .testmoniale h2 {
+    margin-top: 20px 0px;
     text-align: center;
+    font-size: 2.5em;
+    color: #3d3b3b;
 }
 
 .testmoniale .card-container {
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -156,14 +173,59 @@ section {
 }
 
 .card-container .card-item {
-    border: 1px solid black;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 30px;
+}
+.card-item h4{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #383737;
+}
+.card-item p{
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #666161;
 }
 
 .card-item .feed-img {
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    gap: 10px;
+    gap: 15px;
+}
+.feed-img img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.feed-img .text{
+    margin-top: 15px;
+}
+.feed-img .text h5{
+    color: #494545;
+}
+
+/* template section  */
+.template{
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+.template h2{
+    font-size: 2em;
+    color: #252432;
+}
+.template p{
+    font-size: 1em;
+    color: #383737;
+}
+.template img{
+    border-radius: 50px;
 }
 
 .form-action {
