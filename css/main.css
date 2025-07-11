@@ -1,12 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    background-color:#F5F8FF ;
+
+body {
+    background-color: #F5F8FF;
 }
-.header-section{
+
+.header-section {
     width: 100%;
     height: 500px;
     padding: 30px 60px;
@@ -16,16 +19,38 @@ body{
     position: relative;
     /* background-color: red; */
 }
-.nav-container{
+
+.nav-container {
     /* padding: 20px 30px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav-container .logo{
 
+.nav-container .logo {
+    font-size: 3em;
+    color: #4D47FF;
 }
-.hero-setion{
+
+/* Buttons */
+.primary-btn,
+.secondary-btn {
+    padding: 12px 24px;
+    background-color: #4D47FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    background-color: #3a36d1;
+}
+
+.hero-setion {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -39,93 +64,107 @@ body{
     margin-top: 150px; */
 
 }
-.hero-setion h1{
+
+.hero-setion h1 {
     text-align: center;
-}
-.hero-setion .secandor-btn{
-    display: block;
-    margin: 0 auto;  
-}
-.secandor-btn {
-  display: block;
-  margin: 20px auto; /* Top-bottom: 20px, Left-right: auto for centering */
-  padding: 12px 24px;
-  background-color: #4D47FF;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
+    font-size: 48px;
 }
 
-main{
+.hero-setion .secondary-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.secandor-btn {
+    display: block;
+    margin: 20px auto;
+    /* Top-bottom: 20px, Left-right: auto for centering */
+    padding: 12px 24px;
+    background-color: #4D47FF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* main style */
+main {
     padding: 30px 60px;
 }
-section{
+
+section {
     margin: 20px 0;
 
 }
+
 /* action style */
-.action{
+.action {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.Productive{
+
+.Productive {
     /* width: 600px;
     display: block;
     margin: 0 auto; */
 
     background-color: #4d47ff7c;
-    padding: 25px 45px ;
+    padding: 25px 45px;
     border-radius: 15px;
 }
-.Productive h2{
+
+.Productive h2 {
     text-align: center;
 }
-.Productive .flex{
+
+.Productive .flex {
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-/*  testmoniale STYLE*/
-.testmoniale{
 
-}
-.testmoniale h2{
+/*  testmoniale STYLE*/
+.testmoniale {}
+
+.testmoniale h2 {
     text-align: center;
 }
-.testmoniale .card-container{
+
+.testmoniale .card-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
 }
-.card-container .card-item{
+
+.card-container .card-item {
     border: 1px solid black;
 }
-.card-item .feed-img{
+
+.card-item .feed-img {
     display: flex;
     align-items: center;
     /* justify-content: center; */
     gap: 10px;
 }
+
 .form-action {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.left-from h2{
 
-}
-.right-from{
+.left-from h2 {}
 
-}
+.right-from {}
+
 input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  color: #000;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #000;
 }
