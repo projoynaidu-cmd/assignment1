@@ -89,6 +89,7 @@ body {
 }
 
 /* main style */
+
 main {
     padding: 30px 60px;
 }
@@ -99,17 +100,31 @@ section {
 }
 
 /* action style */
+
 .action {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.left-action h3 {
+    font-size: 2em;
+    color: #252432;
+}
+.left-action p{
+    padding: 10px 0;
+    font-size: 1em;
+    color: #252432c9;
+}
+.left-action .btn{
+    margin-top: 10px;
+}
+.right-action img{
+    width: 100%;
+    border-radius: 20px;
+}
 
+/*  */
 .Productive {
-    /* width: 600px;
-    display: block;
-    margin: 0 auto; */
-
     background-color: #4d47ff7c;
     padding: 25px 45px;
     border-radius: 15px;
